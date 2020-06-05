@@ -1,0 +1,41 @@
+@import "colors.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black-color);
+}
+
+strong {
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  &:hover {
+    outline: none;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+    outline: 0;
+  }
+}
